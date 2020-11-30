@@ -1,0 +1,17 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+   float A, s=0;
+   cin>>A;
+   int k=0;
+   while (s<=A) {
+       k++;
+       s=s+1/(float)k;
+   }
+   cout<<k<<" "<<s;
+    return 0;
+}

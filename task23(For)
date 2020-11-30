@@ -1,0 +1,20 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+    float x, y=x;
+    int z, N, f=1, a, b=0;
+    cin>>x>>N;
+    for (z=1; z<=N; z++)
+    {
+        b=2*z+1;
+        for (a=1; a<=b; a++)
+        f=f*a;
+        y=y+(pow((-1),z)*pow(x,b)/f);
+    }
+    cout<<y;
+    return 0;
+}
